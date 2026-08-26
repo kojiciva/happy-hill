@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Happy Hill Venue Website"
+description = "A warm, image-led Serbian marketing website for Happy Hill, a private event venue near Novi Sad, with enquiry form, gallery lightbox, and an availability section shell."
+version = "1.0.0"
+id = "artifacts/happy-hill"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18158
+
+[services.development]
+run = "pnpm --filter @workspace/happy-hill run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/happy-hill", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/happy-hill/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18158"
+BASE_PATH = "/"
