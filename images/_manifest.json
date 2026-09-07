@@ -1,0 +1,348 @@
+{
+ "852ffe90": {
+  "name": "hero-mladenci-zalazak",
+  "w": 1066,
+  "h": 1600
+ },
+ "196320bc": {
+  "name": "basta-ceremonija-stolice",
+  "w": 1100,
+  "h": 733
+ },
+ "7cc3d276": {
+  "name": "terasa-luk-ceremonija",
+  "w": 1100,
+  "h": 733
+ },
+ "92cc7358": {
+  "name": "slavlje-gosti-crno-belo",
+  "w": 1100,
+  "h": 733
+ },
+ "872b5177": {
+  "name": "sala-postavljen-sto",
+  "w": 1066,
+  "h": 1600
+ },
+ "106aaf5f": {
+  "name": "sala-mladenacki-sto",
+  "w": 1067,
+  "h": 1600
+ },
+ "c4b1afa6": {
+  "name": "ceremonija-luk-cvece",
+  "w": 1100,
+  "h": 733
+ },
+ "530f2a86": {
+  "name": "prvi-ples-dim",
+  "w": 1066,
+  "h": 1600
+ },
+ "9f8dd1e3": {
+  "name": "torta-nazdravljanje",
+  "w": 1100,
+  "h": 733
+ },
+ "7c65a0cf": {
+  "name": "podijum-luster-ples",
+  "w": 1000,
+  "h": 1500
+ },
+ "b93c4eb4": {
+  "name": "prvi-ples-siroko",
+  "w": 1066,
+  "h": 1600
+ },
+ "6957cb16": {
+  "name": "mladozenja-latice",
+  "w": 1066,
+  "h": 1600
+ },
+ "b3040fda": {
+  "name": "podijum-mladenci",
+  "w": 1000,
+  "h": 1500
+ },
+ "27a62a6d": {
+  "name": "ulazak-mlade-gosti",
+  "w": 1100,
+  "h": 733
+ },
+ "d1fa770d": {
+  "name": "podijum-ples-gosti",
+  "w": 1066,
+  "h": 1600
+ },
+ "d6c234d8": {
+  "name": "basta-ceremonija-siroko",
+  "w": 1600,
+  "h": 1067
+ },
+ "9383a850": {
+  "name": "kontakt-luk-drapery",
+  "w": 1280,
+  "h": 854
+ },
+ "_izvor": {
+  "hero-ceremonija-luk-bazen": {
+   "fajl": "Slider/hero.jpeg",
+   "orig": [
+    1600,
+    1067
+   ]
+  },
+  "prostor-luk-mladenacki-sto": {
+   "fajl": "Slider/2.jpeg",
+   "orig": [
+    1280,
+    854
+   ]
+  },
+  "prostor-vocnjak-stolovi": {
+   "fajl": "Slider/3.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "prostor-sala-postavljena": {
+   "fajl": "Slider/4.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "slavimo-vencanja": {
+   "fajl": "Vencanja.jpeg",
+   "orig": [
+    1066,
+    1600
+   ]
+  },
+  "slavimo-rodjendan": {
+   "fajl": "Rodjenja.jpg",
+   "orig": [
+    1067,
+    1600
+   ]
+  },
+  "slavimo-jubilej-krstenje": {
+   "fajl": "Jubileji.jpeg",
+   "orig": [
+    1066,
+    1600
+   ]
+  },
+  "slavimo-team-building": {
+   "fajl": "Tim billding.jpeg",
+   "orig": [
+    1600,
+    1066
+   ]
+  },
+  "cta-terasa-lampice": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.52.25 (1).jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "vencanja-hero-dim-baloni": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-16 at 12.10.05 (1).jpeg",
+   "orig": [
+    1600,
+    1067
+   ]
+  },
+  "prica-zalazak-zagrljaj": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/S & U-1146_websize.jpg",
+   "orig": [
+    1067,
+    1600
+   ]
+  },
+  "prica-torta-luk": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/S & U-1377_websize.jpg",
+   "orig": [
+    1067,
+    1600
+   ]
+  },
+  "prica-vocnjak-cb": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.52.32.jpeg",
+   "orig": [
+    1064,
+    1600
+   ]
+  },
+  "prica-mlada-drvo-cb": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.12.jpeg",
+   "orig": [
+    1064,
+    1600
+   ]
+  },
+  "prica-bazen-mladenci": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.14.jpeg",
+   "orig": [
+    1064,
+    1600
+   ]
+  },
+  "prica-zelenilo-zagrljaj": {
+   "fajl": "Slike za sajt /WhatsApp Image 2026-08-15 at 22.57.02.jpeg",
+   "orig": [
+    1066,
+    1600
+   ]
+  },
+  "meni-1-50": {
+   "fajl": "Meni /01.png",
+   "orig": [
+    941,
+    1672
+   ]
+  },
+  "meni-2-60": {
+   "fajl": "Meni /03.png",
+   "orig": [
+    941,
+    1672
+   ]
+  },
+  "meni-3-70": {
+   "fajl": "Meni /06.png",
+   "orig": [
+    941,
+    1672
+   ]
+  },
+  "meni-4-110": {
+   "fajl": "Meni /05.png",
+   "orig": [
+    941,
+    1672
+   ]
+  },
+  "og-mladenci-prvi-ples": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/MIC_7665.jpg",
+   "orig": [
+    6000,
+    4000
+   ]
+  },
+  "vencanja-dugi-sto-cvece": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.53.06.jpeg",
+   "orig": [
+    1064,
+    1600
+   ]
+  },
+  "vencanja-terasa-ceremonija": {
+   "fajl": "Slike za sajt /WhatsApp Image 2026-08-25 at 12.50.20.jpeg",
+   "orig": [
+    2048,
+    1365
+   ]
+  },
+  "kontakt-kapija-ulaz": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 21.48.51.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "prica-zalazak-poljubac": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/S & U-1140_websize.jpg",
+   "orig": [
+    1067,
+    1600
+   ]
+  },
+  "rodj-gosti-ples": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/S & U-799_websize.jpg",
+   "orig": [
+    1600,
+    1067
+   ]
+  },
+  "rodj-slavlje-podijum": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.04.jpeg",
+   "orig": [
+    1066,
+    1600
+   ]
+  },
+  "rodj-luster-lampice": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.52.36.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "rodj-postavljen-sto": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.53.08 (1).jpeg",
+   "orig": [
+    1064,
+    1600
+   ]
+  },
+  "jub-sala-okrugli-stolovi": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.13.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "jub-dugi-sto-tul": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.53.08.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "jub-spolja-bazen-kuca": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.53.07 (1).jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "jub-cvece-na-stolu": {
+   "fajl": "Slike za sajt /WhatsApp Image 2026-08-15 at 22.57.03 (1).jpeg",
+   "orig": [
+    1067,
+    1600
+   ]
+  },
+  "tb-basta-drustvo": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.18.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "tb-terasa-stolovi": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.52.58 (1).jpeg",
+   "orig": [
+    1600,
+    1068
+   ]
+  },
+  "tb-terasa-zelenilo": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.17.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  },
+  "tb-vocnjak-stolovi": {
+   "fajl": "Pocetna - sekcija prostor naslovna vencanja/WhatsApp Image 2026-08-15 at 22.57.07.jpeg",
+   "orig": [
+    1600,
+    1064
+   ]
+  }
+ }
+}
