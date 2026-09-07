@@ -4,6 +4,28 @@
 (function () {
   'use strict';
 
+  /* ============================================================
+     GDE STIZE UPIT SA FORME
+
+     Sajt je na GitHub Pages, a GitHub Pages nema server, pa forma
+     ne moze sama da posalje mejl. Dva su nacina:
+
+     1) Formspree (preporuceno kad bude vremena)
+        Napravi se besplatan nalog na formspree.io, unese se
+        happyhill.bocke@gmail.com, dobije se ID forme tipa "xyzabcd"
+        i upise ovde dole. Upiti tada stizu na mejl i cuvaju se
+        u Formspree nalogu.
+
+     2) Ako je FORMSPREE prazno (kao sada)
+        Dugme otvara mejl program sa vec popunjenim upitom, koji
+        korisnik samo posalje. Radi bez ijednog naloga.
+
+     Ako se sajt ikad vrati na Netlify, obrisati ovaj blok:
+     Netlify Forms su vec u HTML-u i prorade sami.
+     ============================================================ */
+  var FORMSPREE = '';
+  var PRIMALAC = 'happyhill.bocke@gmail.com';
+
   /* ---------- mobilna navigacija ---------- */
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
@@ -97,6 +119,35 @@
     window.addEventListener('resize', sync);
     sync();
   });
+
+  /* ---------- forma za upit ---------- */
+  var upit = document.querySelector('form[name="upit"]');
+  if (upit) {
+    var polja = [
+      ['ime', 'Ime i prezime'], ['telefon', 'Telefon'], ['email', 'Email'],
+      ['datum', 'Zeljeni datum'], ['vrsta', 'Vrsta proslave'],
+      ['gosti', 'Broj gostiju'], ['meni', 'Meni'], ['poruka', 'Poruka']
+    ];
+
+    if (FORMSPREE) {
+      upit.setAttribute('action', 'https://formspree.io/f/' + FORMSPREE);
+      upit.setAttribute('method', 'POST');
+    } else {
+      upit.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!upit.reportValidity()) return;
+        var d = new FormData(upit);
+        var telo = polja
+          .map(function (p) { return p[1] + ': ' + (d.get(p[0]) || ''); })
+          .join('\n');
+        var naslov = 'Upit sa sajta — ' + (d.get('vrsta') || 'proslava');
+        window.location.href = 'mailto:' + PRIMALAC +
+          '?subject=' + encodeURIComponent(naslov) +
+          '&body=' + encodeURIComponent(telo);
+        setTimeout(function () { window.location.href = 'hvala.html'; }, 800);
+      });
+    }
+  }
 
   /* ---------- tabovi za menije ---------- */
   var tablist = document.querySelector('[role="tablist"]');

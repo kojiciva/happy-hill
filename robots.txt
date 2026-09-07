@@ -1,4 +1,3 @@
+# Draft za klijenta. Ne indeksirati dok sajt ne bude odobren i dok se ne uzme domen.
 User-agent: *
-Allow: /
-
-Sitemap: https://happy-hill.netlify.app/sitemap.xml
+Disallow: /
