@@ -1,0 +1,493 @@
+{
+ "valuta": "EUR",
+ "koraci": [
+  {
+   "id": "predjelo",
+   "naslov": "Predjelo",
+   "opis": "Izaberite najmanje pet predjela.",
+   "grupe": [
+    {
+     "kategorija": "Predjelo",
+     "min": 5
+    }
+   ]
+  },
+  {
+   "id": "corba",
+   "naslov": "Čorba ili potaž",
+   "opis": "Izaberite jednu čorbu ili potaž.",
+   "grupe": [
+    {
+     "kategorija": "Čorba/Potaž",
+     "min": 1,
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "glavno1",
+   "naslov": "Glavno jelo 1",
+   "opis": "Prva večera. Izaberite najmanje pet jela.",
+   "grupe": [
+    {
+     "kategorija": "Glavno jelo",
+     "min": 5
+    }
+   ]
+  },
+  {
+   "id": "glavno2",
+   "naslov": "Glavno jelo 2",
+   "opis": "Druga večera. Izaberite najmanje dva jela.",
+   "grupe": [
+    {
+     "kategorija": "Glavno jelo",
+     "min": 2,
+     "iskljuci": "glavno1"
+    }
+   ]
+  },
+  {
+   "id": "salata",
+   "naslov": "Salate i prilog",
+   "opis": "Izaberite najmanje dve salate i jedan prilog.",
+   "grupe": [
+    {
+     "kategorija": "Salata",
+     "min": 2
+    },
+    {
+     "kategorija": "Prilog",
+     "min": 1
+    }
+   ]
+  }
+ ],
+ "jela": {
+  "Salata": [
+   {
+    "id": "sa-01",
+    "naziv": "Kapreze salata",
+    "cena": 2.82
+   },
+   {
+    "id": "sa-02",
+    "naziv": "Iceberg sa prelivom od gorgonzole",
+    "cena": 3.28
+   },
+   {
+    "id": "sa-03",
+    "naziv": "Coleslaw sa pinjolama",
+    "cena": 3.21
+   },
+   {
+    "id": "sa-04",
+    "naziv": "Pečena paprika",
+    "cena": 2.14
+   },
+   {
+    "id": "sa-05",
+    "naziv": "Šopska salata",
+    "cena": 2.07
+   },
+   {
+    "id": "sa-06",
+    "naziv": "Mix zelenih salata",
+    "cena": 1.81
+   },
+   {
+    "id": "sa-07",
+    "naziv": "Mešana salata",
+    "cena": 1.72
+   },
+   {
+    "id": "sa-08",
+    "naziv": "Srpska salata",
+    "cena": 1.67
+   },
+   {
+    "id": "sa-09",
+    "naziv": "Tarator",
+    "cena": 2.59
+   },
+   {
+    "id": "sa-10",
+    "naziv": "Korpica – kikiriki/praziluk salata",
+    "cena": 1.34
+   },
+   {
+    "id": "sa-11",
+    "naziv": "Kupus salata",
+    "cena": 1.33
+   },
+   {
+    "id": "sa-12",
+    "naziv": "Korpica – pileća salata",
+    "cena": 1.33
+   },
+   {
+    "id": "sa-13",
+    "naziv": "Vitaminska salata",
+    "cena": 1.31
+   }
+  ],
+  "Prilog": [
+   {
+    "id": "pl-01",
+    "naziv": "Taljatele",
+    "cena": 1.88
+   },
+   {
+    "id": "pl-02",
+    "naziv": "Pire krompir",
+    "cena": 1.77
+   },
+   {
+    "id": "pl-03",
+    "naziv": "Pekarski krompir",
+    "cena": 1.53
+   }
+  ],
+  "Predjelo": [
+   {
+    "id": "pr-01",
+    "naziv": "Happy Hill špikovani rolat",
+    "cena": 6.42
+   },
+   {
+    "id": "pr-02",
+    "naziv": "Suhomesnato premium – goveđa pršuta, njeguška pršuta, mortadela, kulen iz Kate",
+    "cena": 4.73
+   },
+   {
+    "id": "pr-03",
+    "naziv": "Sirevi premium – mocarela, brie, gorgonzola",
+    "cena": 3.98
+   },
+   {
+    "id": "pr-04",
+    "naziv": "Suhomesnato – domaći kulen, suva pečenica, pršuta, rolovana dimljena slanina",
+    "cena": 3.95
+   },
+   {
+    "id": "pr-05",
+    "naziv": "Tanjir dobrodošlice – koštunjavo, suvo voće, sir i med",
+    "cena": 3.52
+   },
+   {
+    "id": "pr-06",
+    "naziv": "Rolovani pileći ražnjići",
+    "cena": 3.5
+   },
+   {
+    "id": "pr-07",
+    "naziv": "Happy Hill predjelo premium – ramstek i terijaki grilovano povrće",
+    "cena": 3.45
+   },
+   {
+    "id": "pr-08",
+    "naziv": "Suhomesnato – kulen, suvi vrat, pečenica",
+    "cena": 3.44
+   },
+   {
+    "id": "pr-09",
+    "naziv": "Premium korpica – guščija džigerica",
+    "cena": 3.11
+   },
+   {
+    "id": "pr-10",
+    "naziv": "Sirevi – gauda, ementaler, dimljeni sir",
+    "cena": 2.9
+   },
+   {
+    "id": "pr-11",
+    "naziv": "Tanjir dobrodošlice – koštunjavo i suvo voće",
+    "cena": 2.87
+   },
+   {
+    "id": "pr-12",
+    "naziv": "Sirevi – kačkavalj, dimljeni sir",
+    "cena": 2.62
+   },
+   {
+    "id": "pr-13",
+    "naziv": "Korpica – ramstek",
+    "cena": 2.41
+   },
+   {
+    "id": "pr-14",
+    "naziv": "Sirevi – kačkavalj, feta",
+    "cena": 2.38
+   },
+   {
+    "id": "pr-15",
+    "naziv": "Štapić pršuta – grisine sa pršutom",
+    "cena": 2.24
+   },
+   {
+    "id": "pr-16",
+    "naziv": "Ražnjić – ementaler i suva kajsija",
+    "cena": 2.17
+   },
+   {
+    "id": "pr-17",
+    "naziv": "Uštipci",
+    "cena": 1.98
+   },
+   {
+    "id": "pr-18",
+    "naziv": "Tortilja rolat – bolonjeze",
+    "cena": 1.89
+   },
+   {
+    "id": "pr-19",
+    "naziv": "Korpica – kraba",
+    "cena": 1.88
+   },
+   {
+    "id": "pr-20",
+    "naziv": "Rolat – ajvar",
+    "cena": 1.86
+   },
+   {
+    "id": "pr-21",
+    "naziv": "Rolat – spanać",
+    "cena": 1.86
+   },
+   {
+    "id": "pr-22",
+    "naziv": "Tortilja rolat – krem/slanina",
+    "cena": 1.84
+   },
+   {
+    "id": "pr-23",
+    "naziv": "Rolat – natur",
+    "cena": 1.82
+   },
+   {
+    "id": "pr-24",
+    "naziv": "Proja – sir",
+    "cena": 1.67
+   },
+   {
+    "id": "pr-25",
+    "naziv": "Korpica – sir/susam",
+    "cena": 1.66
+   },
+   {
+    "id": "pr-26",
+    "naziv": "Proja – ajvar",
+    "cena": 1.55
+   },
+   {
+    "id": "pr-27",
+    "naziv": "Korpica – urnebes",
+    "cena": 1.53
+   },
+   {
+    "id": "pr-28",
+    "naziv": "Tortilja rolat – prolećna rolnica",
+    "cena": 1.52
+   },
+   {
+    "id": "pr-29",
+    "naziv": "Proja – spanać",
+    "cena": 1.52
+   },
+   {
+    "id": "pr-30",
+    "naziv": "Korpica – terijaki grilovano povrće",
+    "cena": 1.39
+   }
+  ],
+  "Glavno jelo": [
+   {
+    "id": "gl-01",
+    "naziv": "Happy Hill junetina u tartuf sosu",
+    "cena": 9.71
+   },
+   {
+    "id": "gl-02",
+    "naziv": "Svinjski file u sosu od vrganja",
+    "cena": 8.59
+   },
+   {
+    "id": "gl-03",
+    "naziv": "Juneći gulaš",
+    "cena": 7.51
+   },
+   {
+    "id": "gl-04",
+    "naziv": "Svinjski file sa pršutom i crvenim vinom",
+    "cena": 7.38
+   },
+   {
+    "id": "gl-05",
+    "naziv": "Punjeni svinjski file sa suvim šljivama",
+    "cena": 7.33
+   },
+   {
+    "id": "gl-06",
+    "naziv": "Ćuretina sa mlincima",
+    "cena": 6.96
+   },
+   {
+    "id": "gl-07",
+    "naziv": "Ćuretina – badem, majčina dušica i parmezan",
+    "cena": 6.83
+   },
+   {
+    "id": "gl-08",
+    "naziv": "Pečenje mix – prasetina i jagnjetina",
+    "cena": 6.36
+   },
+   {
+    "id": "gl-09",
+    "naziv": "Svinjski gulaš sa vrganjem",
+    "cena": 6.3
+   },
+   {
+    "id": "gl-10",
+    "naziv": "Zapečena butkica – ren sos",
+    "cena": 5.99
+   },
+   {
+    "id": "gl-11",
+    "naziv": "Ćuretina u kari sosu",
+    "cena": 5.97
+   },
+   {
+    "id": "gl-12",
+    "naziv": "Zapečena butkica – mirodija sos",
+    "cena": 5.83
+   },
+   {
+    "id": "gl-13",
+    "naziv": "Bajadera pečenje",
+    "cena": 5.75
+   },
+   {
+    "id": "gl-14",
+    "naziv": "Rolovana piletina – spanać i kačkavalj, saltimboka sos",
+    "cena": 5.64
+   },
+   {
+    "id": "gl-15",
+    "naziv": "Rolovana piletina – spanać i kačkavalj, 4 vrste sira",
+    "cena": 5.63
+   },
+   {
+    "id": "gl-16",
+    "naziv": "Svinjski vrat u sosu od karamelizovanog luka",
+    "cena": 5.6
+   },
+   {
+    "id": "gl-17",
+    "naziv": "Rolovana piletina – spanać i kačkavalj, karbonara sos",
+    "cena": 5.58
+   },
+   {
+    "id": "gl-18",
+    "naziv": "Happy Hill špikovano pečenje u natur sosu",
+    "cena": 5.38
+   },
+   {
+    "id": "gl-19",
+    "naziv": "Piletina u sosu 4 vrste sira",
+    "cena": 5.34
+   },
+   {
+    "id": "gl-20",
+    "naziv": "Rolovana piletina – spanać i kačkavalj, fungi sos",
+    "cena": 5.27
+   },
+   {
+    "id": "gl-21",
+    "naziv": "Kobasica delikates – bavarska",
+    "cena": 5.2
+   },
+   {
+    "id": "gl-22",
+    "naziv": "Kobasica delikates – kranjska",
+    "cena": 5.2
+   },
+   {
+    "id": "gl-23",
+    "naziv": "Piletina saltimboka",
+    "cena": 5.07
+   },
+   {
+    "id": "gl-24",
+    "naziv": "Piletina u sosu karbonara",
+    "cena": 5.0
+   },
+   {
+    "id": "gl-25",
+    "naziv": "Roštilj kobasica sa sirom",
+    "cena": 4.91
+   },
+   {
+    "id": "gl-26",
+    "naziv": "Ćevapi",
+    "cena": 4.76
+   },
+   {
+    "id": "gl-27",
+    "naziv": "Svinjski paprikaš",
+    "cena": 4.71
+   },
+   {
+    "id": "gl-28",
+    "naziv": "Kobasica delikates – bela",
+    "cena": 4.65
+   },
+   {
+    "id": "gl-29",
+    "naziv": "Piletina u sosu fungi",
+    "cena": 4.63
+   },
+   {
+    "id": "gl-30",
+    "naziv": "Pileći batak",
+    "cena": 4.6
+   },
+   {
+    "id": "gl-31",
+    "naziv": "Roštilj kobasica",
+    "cena": 4.54
+   }
+  ],
+  "Čorba/Potaž": [
+   {
+    "id": "co-01",
+    "naziv": "Potaž od graška",
+    "cena": 2.88
+   },
+   {
+    "id": "co-02",
+    "naziv": "Juneća čorba",
+    "cena": 2.8
+   },
+   {
+    "id": "co-03",
+    "naziv": "Teleća čorba",
+    "cena": 2.8
+   },
+   {
+    "id": "co-04",
+    "naziv": "Potaž od karfiola",
+    "cena": 2.76
+   },
+   {
+    "id": "co-05",
+    "naziv": "Pileća čorba",
+    "cena": 2.67
+   },
+   {
+    "id": "co-06",
+    "naziv": "Potaž od bundeve",
+    "cena": 2.41
+   }
+  ]
+ }
+}

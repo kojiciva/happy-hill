@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- draft: skida se kad klijent odobri i kad se uzme domen -->
+<meta name="robots" content="noindex, nofollow">
+<title>Napravite svoj meni — Happy Hill</title>
+<meta name="description" content="Sastavite svoj meni u Happy Hillu: predjela, čorba, dve večere, salate i prilog. Odmah vidite okvirnu cenu po gostu.">
+<link rel="canonical" href="https://kojiciva.github.io/happy-hill/napravi-meni.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="Napravite svoj meni — Happy Hill">
+<meta property="og:description" content="Sastavite svoj meni i odmah vidite okvirnu cenu po gostu.">
+<meta property="og:image" content="https://kojiciva.github.io/happy-hill/images/meni-4-110-1600.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo-forest.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="has-pricebar">
+
+<a href="#glavni" class="sr-only">Pređite na sadržaj</a>
+
+<nav class="nav solid">
+  <div class="wrap nav-in">
+    <a href="index.html" class="nav-logo"><img src="images/logo-krem.png" alt="Happy Hill" width="168" height="54"></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="meni-navigacije" aria-label="Meni">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links label" id="meni-navigacije">
+      <a href="index.html">Početna</a>
+      <a href="proslave.html">Venčanja i proslave</a>
+      <a href="meni.html" aria-current="page">Meni</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+<main id="glavni">
+
+  <section class="section tight" style="padding-bottom: 32px;">
+    <div class="wrap builder-wrap">
+      <p class="italic hero-kicker" style="color: var(--gold);"><a href="meni.html" class="back-link">← Meniji</a></p>
+      <h1 class="h-lg" style="margin-bottom: 20px;">Napravite svoj meni</h1>
+      <p class="lead">Pored četiri gotova menija, meni možete sastaviti i sami. Birate jela korak po korak i odmah vidite okvirnu cenu po gostu.</p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top: 0;">
+    <div class="wrap builder-wrap">
+
+      <noscript>
+        <p class="note">Za sastavljanje menija potreban je JavaScript. Pozovite nas na <a href="tel:+381638942734" class="link-underline" style="padding-bottom: 2px;">063 8942734</a>, pa da ga sastavimo zajedno.</p>
+      </noscript>
+
+      <div class="builder" id="builder" hidden>
+
+        <div class="builder-progress">
+          <p class="label"><span id="korak-broj">Korak 1</span> od <span id="korak-ukupno">8</span></p>
+          <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+        </div>
+
+        <!-- 1. proslava -->
+        <section class="step" data-korak="proslava" aria-labelledby="h-proslava">
+          <h2 class="h-sm" id="h-proslava" tabindex="-1">Kakvu proslavu planirate?</h2>
+          <p class="step-hint">Ovo nam pomaže da vas bolje posavetujemo.</p>
+          <div class="form-grid">
+            <div class="field select-wrap">
+              <label class="label" for="vrsta">Vrsta proslave</label>
+              <select id="vrsta" name="vrsta">
+                <option>Venčanje</option>
+                <option>Rođendan</option>
+                <option>Jubilej</option>
+                <option>Krštenje</option>
+                <option>Korporativna proslava i team building</option>
+                <option>Nešto drugo</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="label" for="gosti">Broj gostiju</label>
+              <input id="gosti" name="gosti" type="number" min="1" max="200" inputmode="numeric" placeholder="okvirno, do 200">
+            </div>
+          </div>
+        </section>
+
+        <!-- 2–6. jela, crta ih napravi-meni.js iz assets/data/meni.json -->
+        <div id="koraci-jela"></div>
+
+        <!-- 7. piće -->
+        <section class="step" data-korak="pice" aria-labelledby="h-pice" hidden>
+          <h2 class="h-sm" id="h-pice" tabindex="-1">Piće</h2>
+          <p class="step-hint">Piće ide u paketima, ne bira se pojedinačno.</p>
+          <div class="note" style="margin-top: 8px;">
+            <p>Paket pića dogovaramo zajedno, kad se čujemo. Nije uračunat u cenu koju vidite ispod.</p>
+          </div>
+        </section>
+
+        <!-- 8. rezime i slanje -->
+        <section class="step" data-korak="rezime" aria-labelledby="h-rezime" hidden>
+          <h2 class="h-sm" id="h-rezime" tabindex="-1">Vaš meni</h2>
+          <div class="summary">
+            <p class="summary-price"><span class="label">Okvirno po gostu</span><span id="rezime-cena">0 €</span></p>
+            <div id="rezime-lista"></div>
+          </div>
+          <div class="form-note" style="margin: 18px 0 40px;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" style="flex:none; margin-top:4px;" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#B3924F" stroke-width="1.3"/><path d="M12 11v6M12 7.6v.9" stroke="#B3924F" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <p>Cena je okvirna i odnosi se na hranu. Piće i konačnu cenu potvrđujemo kad se čujemo. Ovo je upit, ne rezervacija.</p>
+          </div>
+
+          <form name="meni-upit" id="meni-upit" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label class="label" for="ime">Ime i prezime</label>
+                <input id="ime" name="ime" type="text" autocomplete="name" required placeholder="Marija Jovanović">
+              </div>
+              <div class="field">
+                <label class="label" for="telefon">Telefon</label>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel" required placeholder="06x xxx xxxx">
+              </div>
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="marija@primer.rs">
+              </div>
+              <div class="field">
+                <label class="label" for="datum">Željeni datum</label>
+                <input id="datum" name="datum" type="date">
+              </div>
+              <div class="field full">
+                <label class="label" for="poruka">Poruka</label>
+                <textarea id="poruka" name="poruka" placeholder="Još nešto što treba da znamo?"></textarea>
+              </div>
+            </div>
+            <p style="margin-top: 34px;"><button type="submit" class="btn btn-forest">Pošaljite meni</button></p>
+          </form>
+        </section>
+
+        <div class="step-nav">
+          <button type="button" class="btn btn-outline" id="nazad">Nazad</button>
+          <button type="button" class="btn btn-forest" id="dalje">Dalje</button>
+        </div>
+      </div>
+
+      <div class="note" id="greska" hidden>
+        <p>Spisak jela trenutno ne može da se učita. Pozovite nas na <a href="tel:+381638942734" class="link-underline" style="padding-bottom: 2px;">063 8942734</a>, pa da sastavimo meni zajedno.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div class="pricebar" id="pricebar" hidden>
+  <div class="wrap pricebar-in">
+    <p class="pricebar-count" id="brojac" aria-live="polite"></p>
+    <p class="pricebar-price"><span class="label">Okvirno po gostu</span><span id="cena">0 €</span></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo-krem.png" alt="Happy Hill" width="150" height="48">
+        <p style="max-width: 300px;">Imanje za venčanja i proslave na otvorenom, nadomak Novog Sada.</p>
+      </div>
+      <div class="footer-col">
+        <p class="label">Navigacija</p>
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="proslave.html">Venčanja i proslave</a></li>
+          <li><a href="meni.html">Meni</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="label">Kontakt</p>
+        <ul>
+          <li><a href="tel:+381638942734">063 8942734</a></li>
+          <li><a href="mailto:happyhill.bocke@gmail.com">happyhill.bocke@gmail.com</a></li>
+          <li>Lepe Kate bb, Sremska Kamenica</li>
+          <li><a href="https://www.instagram.com/happy_hill_bocke/" target="_blank" rel="noopener">@happy_hill_bocke</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Happy Hill</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/napravi-meni.js" defer></script>
+</body>
+</html>

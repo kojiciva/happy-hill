@@ -279,6 +279,79 @@ button{ font: inherit; color: inherit; }
 .drinks-list li{ break-inside: avoid; font-size: 15.5px; line-height: 1.6; margin-bottom: 8px; }
 .note{ border-left: 2px solid var(--gold); padding: 4px 0 4px 22px; margin-top: 34px; max-width: 740px; font-size: 15.5px; }
 
+/* ---------- napravite svoj meni ----------
+   Jedan korak na ekranu, jela su prave checkbox kartice.
+   Traka sa cenom je fiksna dole, zato body dobija donji razmak. */
+.builder-wrap{ max-width: 860px; margin-left: auto; margin-right: auto; }
+.back-link{ color: var(--gold); font-size: 17px; }
+.back-link:hover{ color: var(--forest); }
+.has-pricebar{ padding-bottom: 92px; }
+
+.builder-progress{ margin-bottom: 40px; }
+.builder-progress .label{ color: var(--ink-quiet); margin-bottom: 10px; }
+.progress-track{ height: 2px; background: var(--line); }
+.progress-fill{ height: 100%; width: 0; background: var(--gold); transition: width .3s ease; }
+
+.step h2{ margin-bottom: 8px; }
+.step h2:focus{ outline: none; }
+.step-hint{ color: var(--ink-quiet); margin-bottom: 28px; }
+
+.dish-group{ border: 0; margin: 0; padding: 0; }
+.dish-group + .dish-group{ margin-top: 34px; }
+.dish-legend{ color: var(--forest); padding: 0; margin-bottom: 14px; }
+.dish-list{ display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+.dish{
+  position: relative; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px;
+  align-items: baseline; padding: 16px 18px 16px 46px; cursor: pointer;
+  background: var(--white); border: 1px solid var(--line);
+  transition: background .15s, border-color .15s, color .15s;
+}
+.dish:hover{ border-color: var(--gold); }
+.dish input{
+  position: absolute; left: 16px; top: 19px; width: 18px; height: 18px; margin: 0;
+  accent-color: var(--gold); cursor: pointer;
+}
+.dish-name{ font-size: 15.5px; line-height: 1.45; color: var(--forest); }
+.dish-price{ font-family: var(--serif); font-size: 16px; color: var(--ink-quiet); white-space: nowrap; }
+.dish-taken{ grid-column: 1 / -1; font-size: 13px; font-style: italic; color: var(--ink-quiet); }
+.dish-taken:empty{ display: none; }
+.dish:has(input:checked){ background: var(--forest); border-color: var(--gold); }
+.dish:has(input:checked) .dish-name{ color: #fff; }
+.dish:has(input:checked) .dish-price{ color: var(--gold-light); }
+.dish:has(input:focus-visible){ outline: 2px solid var(--gold); outline-offset: 2px; }
+.dish.is-taken{ cursor: not-allowed; opacity: .5; background: var(--cream-2); }
+.dish.is-taken:hover{ border-color: var(--line); }
+
+.step-nav{ display: flex; justify-content: space-between; gap: 14px; margin-top: 44px; }
+.step-nav #dalje{ margin-left: auto; }
+.step-nav .btn[hidden]{ display: none; }
+.btn-outline{ background: none; border: 1px solid rgba(41,48,25,.4); color: var(--forest); }
+.btn-outline:hover{ border-color: var(--forest); }
+.btn[disabled]{ opacity: .4; cursor: not-allowed; }
+
+.summary{ background: var(--forest); padding: clamp(26px,3.6vw,46px); }
+.summary-price{ display: flex; flex-direction: column; margin-bottom: 26px; }
+.summary-price .label{ color: var(--gold); margin-bottom: 4px; }
+.summary-price span:last-child{ font-family: var(--serif); font-size: clamp(34px,4vw,46px); color: #fff; line-height: 1.1; }
+.summary-course + .summary-course{ margin-top: 22px; }
+.summary-course .label{ color: var(--gold); margin-bottom: 8px; }
+.summary-course ul{ list-style: none; margin: 0; padding: 0; }
+.summary-course li{ display: flex; justify-content: space-between; gap: 16px; font-size: 15.5px; line-height: 1.55; color: rgba(255,255,255,.86); }
+.summary-course li + li{ margin-top: 4px; }
+.summary-course li span:last-child{ color: var(--gold-light); white-space: nowrap; }
+
+.pricebar{
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 25;
+  background: var(--forest); border-top: 1px solid var(--gold); padding: 14px 0;
+}
+.pricebar-in{ display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.pricebar-count{ font-size: 14.5px; color: rgba(255,255,255,.8); }
+.pricebar-price{ display: flex; flex-direction: column; align-items: flex-end; flex: none; }
+.pricebar-price .label{ font-size: 10.5px; color: var(--gold); }
+.pricebar-price span:last-child{ font-family: var(--serif); font-size: 26px; color: #fff; line-height: 1.15; }
+
+.tab-link{ display: block; }
+
 /* ---------- kontakt ---------- */
 .contact-grid{ display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(40px,5vw,76px); align-items: start; }
 .form-grid{ display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 28px; }
@@ -366,6 +439,9 @@ button{ font: inherit; color: inherit; }
   .drinks-list{ columns: 1; }
   .footer-grid{ grid-template-columns: 1fr; gap: 34px; }
   .tab{ padding: 14px 20px 12px; flex: 1 0 auto; }
+  .dish-list{ grid-template-columns: 1fr; }
+  .pricebar-count{ font-size: 13px; }
+  .pricebar-price span:last-child{ font-size: 22px; }
   .hero-body{ padding-bottom: 56px; }
   .celebrate-cap span{ font-size: 21px; }
   /* na telefonu nema hovera, pa natpis stoji stalno */
