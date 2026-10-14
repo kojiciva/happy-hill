@@ -4,6 +4,30 @@
 (function () {
   'use strict';
 
+  /* ---------- ulazak sekcija pri skrolu ----------
+     CSS ih sakriva samo kad <html> ima .js. Ovde dobijaju .in kad udju u ekran,
+     a susedi u istoj grupi kasne po 80 ms (najvise 4 koraka). */
+  var REVEAL = '.head-block, .split > *, .feature, .ambient, .celebrate-item, .photo-row > div, .band-in, .menu-card, .drinks, .note, .info-panel, .map, .contact-grid > div:first-child, .slider';
+  var items = document.querySelectorAll(REVEAL);
+  var mirno = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || mirno) {
+    Array.prototype.forEach.call(items, function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        io.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+    Array.prototype.forEach.call(items, function (el) {
+      var sib = Array.prototype.filter.call(el.parentNode.children, function (c) { return c.matches(REVEAL); });
+      var n = Math.min(sib.indexOf(el), 4);
+      if (n > 0) el.style.setProperty('--d', (n * 80) + 'ms');
+      io.observe(el);
+    });
+  }
+
   /* ============================================================
      GDE STIZE UPIT SA FORME
 
