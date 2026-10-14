@@ -401,6 +401,36 @@ button{ font: inherit; color: inherit; }
 .footer-col li + li{ margin-top: 10px; }
 .footer-bottom{ padding-top: 24px; font-size: 13px; color: rgba(255,255,255,.4); }
 
+/* ---------- copy 14.10: dva dugmeta, sve na jednom mestu, ambijenti ---------- */
+.btn-row{ display: flex; gap: 14px; flex-wrap: wrap; }
+.band-in .btn-row{ justify-content: center; }
+.hero-body .lead + .lead{ margin-top: 14px; }
+.btn-forest-ghost{ border: 1px solid var(--forest); color: var(--forest); background: none; }
+.btn-forest-ghost:hover{ background: var(--forest); color: var(--white); }
+
+.features{ display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 40px 48px; }
+.feature{ border-top: 1px solid var(--line); padding-top: 22px; }
+.feature h3{ margin-bottom: 10px; color: var(--forest); }
+
+.ambients{ display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 28px; }
+.ambient img{ width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; margin-bottom: 22px; }
+.ambient h3{ margin-bottom: 10px; color: var(--forest); }
+
+/* podstrana sa tekstom u heroju: visina prati sadrzaj */
+.subhero.tall{ height: auto; min-height: 0; }
+.subhero.tall .subhero-body{ position: relative; min-height: min(78vh, 660px); padding: calc(var(--nav-h) + 40px) 0 64px; }
+.subhero-lead{ color: rgba(255,255,255,.88); max-width: 600px; margin-top: 22px; }
+.subhero-lead + .subhero-lead{ margin-top: 12px; }
+.tab-price small{ font-family: var(--sans); font-size: 13px; letter-spacing: .02em; }
+
+@media (max-width: 1024px){
+  .features{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 760px){
+  .features, .ambients{ grid-template-columns: 1fr; }
+  .ambient img{ aspect-ratio: 3/2; }
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 1024px){
   :root{ --pad: 36px; }

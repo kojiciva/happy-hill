@@ -126,7 +126,7 @@
     var polja = [
       ['ime', 'Ime i prezime'], ['telefon', 'Telefon'], ['email', 'Email'],
       ['datum', 'Zeljeni datum'], ['vrsta', 'Vrsta proslave'],
-      ['gosti', 'Broj gostiju'], ['meni', 'Meni'], ['poruka', 'Poruka']
+      ['gosti', 'Okviran broj gostiju'], ['meni', 'Meni'], ['poruka', 'Poruka']
     ];
 
     if (FORMSPREE) {

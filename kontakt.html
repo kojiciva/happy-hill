@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- draft: skida se kad klijent odobri i kad se uzme domen -->
 <meta name="robots" content="noindex, nofollow">
-<title>Kontakt — Happy Hill</title>
-<meta name="description" content="Happy Hill, Lepe Kate bb, 21208 Sremska Kamenica. Telefon 063 8942734, happyhill.bocke@gmail.com. Pošaljite upit za venčanje ili proslavu.">
+<title>Kontakt i rezervacije | Happy Hill Sremska Kamenica</title>
+<meta name="description" content="Kontaktirajte Happy Hill i proverite slobodne termine za venčanja i proslave u Sremskoj Kamenici, nadomak Novog Sada.">
 <link rel="canonical" href="https://kojiciva.github.io/happy-hill/kontakt.html">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sr_RS">
-<meta property="og:title" content="Kontakt — Happy Hill">
-<meta property="og:description" content="Lepe Kate bb, Sremska Kamenica. Pošaljite upit za venčanje ili proslavu.">
+<meta property="og:title" content="Kontakt i rezervacije | Happy Hill Sremska Kamenica">
+<meta property="og:description" content="Proverite slobodne termine za venčanja i proslave u Sremskoj Kamenici, nadomak Novog Sada.">
 <meta property="og:image" content="https://kojiciva.github.io/happy-hill/images/og-mladenci-prvi-ples-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -51,7 +51,7 @@
     <div class="subhero-body">
       <div class="wrap">
         <p class="italic hero-kicker">kontakt</p>
-        <h1 class="h-lg" style="color:#fff;">Popričajmo o<br>vašoj proslavi</h1>
+        <h1 class="h-lg" style="color:#fff;">Možda ste upravo pronašli mesto za svoju proslavu</h1>
       </div>
     </div>
   </header>
@@ -64,10 +64,14 @@
       <!-- FORMA -->
       <div>
         <div class="rule"></div>
-        <h2 class="h-md" style="margin-bottom: 10px;">Pošaljite upit</h2>
-        <p style="margin-bottom: 40px;">Javljamo se u roku od jednog dana.</p>
+        <h2 class="h-md" style="margin-bottom: 18px;">Pošaljite upit</h2>
+        <div class="stack" style="margin-bottom: 40px;">
+          <p>Ako vam Happy Hill deluje kao prostor u kojem možete da zamislite svoj dan, sledeći korak je jednostavan.</p>
+          <p>Pošaljite nam željeni datum, vrstu proslave i okviran broj gostiju.</p>
+          <p>Proverićemo dostupnost i javiti vam se sa svim informacijama potrebnim za sledeći korak.</p>
+        </div>
 
-        <form name="upit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="hvala.html">
+        <form id="upit" name="upit" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="hvala.html">
           <input type="hidden" name="form-name" value="upit">
           <p hidden><label>Ne popunjavajte ovo polje: <input name="bot-field"></label></p>
 
@@ -101,18 +105,19 @@
               </select>
             </div>
             <div class="field">
-              <label class="label" for="gosti">Broj gostiju</label>
+              <label class="label" for="gosti">Okviran broj gostiju</label>
               <input id="gosti" name="gosti" type="number" min="1" max="200" placeholder="okvirno">
             </div>
 
             <div class="field select-wrap full">
-              <label class="label" for="meni">Koji meni vas zanima</label>
+              <label class="label" for="meni">Meni koji vas zanima</label>
               <select id="meni" name="meni">
                 <option>Još ne znam</option>
-                <option>Meni 1 — 50 €</option>
-                <option>Meni 2 — 60 €</option>
-                <option>Meni 3 — 70 €</option>
-                <option>Meni 4 — 110 €</option>
+                <option>Meni 1 — 50 € po osobi</option>
+                <option>Meni 2 — 60 € po osobi</option>
+                <option>Meni 3 — 70 € po osobi</option>
+                <option>Meni 4 — 110 € po osobi</option>
+                <option>Napravite svoj meni</option>
               </select>
             </div>
 
@@ -122,11 +127,11 @@
             </div>
           </div>
 
-          <p style="margin-top: 34px;"><button type="submit" class="btn btn-forest">Pošaljite upit</button></p>
+          <p style="margin-top: 34px;"><button type="submit" class="btn btn-forest">Proverite dostupnost termina</button></p>
 
           <div class="form-note">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" style="flex:none; margin-top:4px;" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="#B3924F" stroke-width="1.3"/><path d="M12 11v6M12 7.6v.9" stroke="#B3924F" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <p>Slanje forme je upit, ne rezervacija. Javljamo vam se da potvrdimo da je datum slobodan.</p>
+            <p>Slanje upita ne predstavlja rezervaciju termina. Nakon što proverimo dostupnost, kontaktiraćemo vas radi daljeg dogovora.</p>
           </div>
         </form>
       </div>
@@ -134,15 +139,15 @@
       <!-- INFO -->
       <div>
         <div class="info-panel">
-          <h2 class="h-sm">Kako do nas</h2>
+          <h2 class="h-sm">Posetite Happy Hill</h2>
 
           <div class="info-row">
             <p class="label">Adresa</p>
-            <p>Lepe Kate bb<br>21208 Sremska Kamenica</p>
+            <p>Happy Hill<br>Lepe Kate bb<br>21208 Sremska Kamenica — Bocke<br>Nadomak Novog Sada</p>
           </div>
           <div class="info-row">
             <p class="label">Telefon</p>
-            <p><a href="tel:+381638942734">063 8942734</a></p>
+            <p><a href="tel:+381638942734">063 894 2734</a></p>
           </div>
           <div class="info-row">
             <p class="label">Email</p>
@@ -155,7 +160,9 @@
 
           <div class="info-foot">
             <p class="label">Rezervacija termina</p>
-            <p>Za rezervaciju termina potrebno je uplatiti kaparu u iznosu od 1.000 € prilikom potpisivanja ugovora. Preostali iznos plaća se nakon održane proslave.</p>
+            <p>Kada pronađete datum koji vam odgovara i dogovorimo detalje proslave, termin se potvrđuje potpisivanjem ugovora i uplatom kapare u iznosu od <strong>1.000 €</strong>.</p>
+            <p style="margin-top: 10px;">Preostali iznos plaća se nakon održane proslave.</p>
+            <p style="margin-top: 22px;"><a href="#upit" class="btn btn-gold">Pošaljite upit za svoj datum</a></p>
           </div>
         </div>
 
@@ -176,7 +183,8 @@
     <div class="footer-grid">
       <div>
         <img src="images/logo-krem.png" alt="Happy Hill" width="150" height="48">
-        <p style="max-width: 300px;">Imanje za venčanja i proslave na otvorenom, nadomak Novog Sada.</p>
+        <p style="max-width: 300px;">Prostor za venčanja i proslave u prirodi u Sremskoj Kamenici, nadomak Novog Sada.</p>
+        <p style="max-width: 300px; margin-top: 12px; font-size: 14px; color: rgba(255,255,255,.55);">Venčanja • Rođendani • Krštenja • Jubileji • Team building</p>
       </div>
       <div class="footer-col">
         <p class="label">Navigacija</p>
@@ -191,7 +199,7 @@
       <div class="footer-col">
         <p class="label">Kontakt</p>
         <ul>
-          <li><a href="tel:+381638942734">063 8942734</a></li>
+          <li><a href="tel:+381638942734">063 894 2734</a></li>
           <li><a href="mailto:happyhill.bocke@gmail.com">happyhill.bocke@gmail.com</a></li>
           <li>Lepe Kate bb, Sremska Kamenica</li>
           <li><a href="https://www.instagram.com/happy_hill_bocke/" target="_blank" rel="noopener">@happy_hill_bocke</a></li>
